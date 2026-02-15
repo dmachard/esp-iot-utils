@@ -1,0 +1,25 @@
+{
+    "name": "esp-iot-utils",
+    "version": "0.1.0",
+    "description": "Descriptive and honest utility collection for ESP32 and ESP8266: HTTP, JSON, Prometheus, WiFi, NTP, and Config.",
+    "keywords": "arduino, esp32, esp8266, iot, http, json, prometheus, wifi, ntp",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmachard/arduino-iot-utils.git"
+    },
+    "authors": [
+        {
+            "name": "Denis",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif32",
+        "espressif8266"
+    ],
+    "dependencies": {
+        "bblanchon/ArduinoJson": "^7.0.0"
+    }
+}
