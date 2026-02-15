@@ -61,6 +61,3 @@ Several examples are available in the [examples](examples/) folder to help you g
 - **[TimeSync](examples/TimeSync/TimeSync.ino)**: NTP synchronization and date formatting.
 - **[ConfigStorage](examples/ConfigStorage/ConfigStorage.ino)**: Persistent configuration storage.
 - **[PrometheusMetrics](examples/PrometheusMetrics/PrometheusMetrics.ino)**: Parsing Prometheus metrics.
-
-## License
-MIT
