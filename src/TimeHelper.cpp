@@ -70,6 +70,28 @@ String TimeHelper::getTodayDate() {
   return String(buffer);
 }
 
+String TimeHelper::getTime() {
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo)) {
+    return "";
+  }
+  char buffer[9];
+  snprintf(buffer, sizeof(buffer), "%02d:%02d:%02d", timeinfo.tm_hour,
+           timeinfo.tm_min, timeinfo.tm_sec);
+  return String(buffer);
+}
+
+String TimeHelper::getDatetimeShort() {
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo)) {
+    return "";
+  }
+  char buffer[6];
+  snprintf(buffer, sizeof(buffer), "%02d:%02d", timeinfo.tm_hour,
+           timeinfo.tm_min);
+  return String(buffer);
+}
+
 const char *TimeHelper::getDayName(int dayOfWeek) {
   if (dayOfWeek < 0 || dayOfWeek > 6)
     return "";

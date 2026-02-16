@@ -10,6 +10,12 @@ public:
   void begin();
   void clear();
 
+  // Static convenience methods (handle lifecycle internally)
+  static void save(const char *ns, const char *key, String value);
+  static void save(const char *ns, const char *key, int value);
+  static String read(const char *ns, const char *key, String defaultValue = "");
+  static int read(const char *ns, const char *key, int defaultValue);
+
   // Generic Getters/Setters (Overloaded)
   void set(const char *key, String value) { preferences.putString(key, value); }
   void set(const char *key, int value) { preferences.putInt(key, value); }
@@ -52,4 +58,3 @@ private:
 };
 
 #endif
-

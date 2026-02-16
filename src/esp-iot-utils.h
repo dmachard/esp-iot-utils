@@ -1,5 +1,5 @@
-#ifndef ARDUINO_IOT_UTILS_H
-#define ARDUINO_IOT_UTILS_H
+#ifndef ESP_IOT_UTILS_H
+#define ESP_IOT_UTILS_H
 
 /**
  * Arduino-IoT-Utils
@@ -14,4 +14,4 @@
 #include "UrlHelper.h"
 #include "WiFiHelper.h"
 
-#endif // ARDUINO_IOT_UTILS_H
+#endif // ESP_IOT_UTILS_H

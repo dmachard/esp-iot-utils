@@ -33,9 +33,9 @@ lib_deps =
 ### Arduino IDE
 Download this repository as a ZIP and add it to your libraries. Manually install **ArduinoJson** version 7+ via the Library Manager.
 
-## Usage Sample
+## Usage
 
-You can include the individual headers you need, or the primary header for convenience:
+The library is designed to be simple and consistent. Include the primary header for access to all utilities:
 
 ```cpp
 #include <esp-iot-utils.h>
@@ -56,7 +56,7 @@ void setup() {
 
 Several examples are available in the [examples](examples/) folder to help you get started:
 
-- **[WiFiConnection](examples/WifiConnection/WiFiConnection.ino)**: How to connect to WiFi.
+- **[WiFiConnection](examples/WiFiConnection/WiFiConnection.ino)**: How to connect to WiFi.
 - **[JsonFetching](examples/JsonFetching/JsonFetching.ino)**: Extracting data from JSON APIs.
 - **[TimeSync](examples/TimeSync/TimeSync.ino)**: NTP synchronization and date formatting.
 - **[ConfigStorage](examples/ConfigStorage/ConfigStorage.ino)**: Persistent configuration storage.

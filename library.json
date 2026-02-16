@@ -1,6 +1,6 @@
 {
     "name": "esp-iot-utils",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Descriptive and honest utility collection for ESP32 and ESP8266: HTTP, JSON, Prometheus, WiFi, NTP, and Config.",
     "keywords": "arduino, esp32, esp8266, iot, http, json, prometheus, wifi, ntp",
     "repository": {

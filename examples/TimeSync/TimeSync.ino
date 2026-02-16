@@ -1,5 +1,4 @@
-#include <TimeHelper.h>
-#include <WiFiHelper.h>
+#include <esp-iot-utils.h>
 
 const char *ssid = "YOUR_SSID";
 const char *password = "YOUR_PASSWORD";

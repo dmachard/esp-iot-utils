@@ -12,8 +12,9 @@ class WiFiHelper {
 public:
   // Initialize and connect to WiFi with DNS configuration
   static bool connect(const String &ssid, const String &password,
-                      const String &dnsMode, const String &dnsPrimary,
-                      const String &dnsSecondary);
+                      const String &dnsMode = "auto",
+                      const String &dnsPrimary = "",
+                      const String &dnsSecondary = "");
 
   // Check if WiFi is connected
   static bool isConnected();

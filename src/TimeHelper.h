@@ -7,8 +7,14 @@
 class TimeHelper {
 public:
   static void init(const char *ntpServer, long gmtOffset, int daylightOffset);
+  static void setup(const char *ntpServer, long gmtOffset, int daylightOffset) {
+    init(ntpServer, gmtOffset, daylightOffset);
+  }
   static bool getLocalTime(struct tm *info);
   static String getTodayDate(); // Returns YYYY-MM-DD
+  static String getDate() { return getTodayDate(); }
+  static String getTime();          // Returns HH:MM:SS
+  static String getDatetimeShort(); // Returns HH:mm
 
   // Locale support
   static void setLanguage(String lang);
